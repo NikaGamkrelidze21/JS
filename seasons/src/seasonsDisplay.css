@@ -1,6 +1,18 @@
-#root {
-    height: 100%;
+html, body {
+    height: 100%
 }
+body {
+    display: flex;
+    align-items: stretch;
+}
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
 .icon-left {
     position: absolute;
     top: 10px;
@@ -28,4 +40,7 @@
 }
 .summer {
     background-color: orange;
+}
+.ui segmenter {
+    height: 100%;
 }
