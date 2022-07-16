@@ -17,7 +17,6 @@ const SeasonDisplay = (props) => {
     return (
     <div>
         <i classname={`${icon} icon`}></i>
-
         <h1>{text}</h1>
         <i className={`${icon} icon`}/>
 
