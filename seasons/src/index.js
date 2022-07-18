@@ -17,8 +17,14 @@ class App extends React.Component {
 
   render() {
       return <SeasonDisplay lat={this.state.lat}  />
+<<<<<<< HEAD
       }
   
+=======
+    }
+
+    return <Loader  textMessage = "Waiting For Location Approving"/>
+>>>>>>> 24cdbccc8b9eacc7c1688e8b2e069568781dd946
   }
 
 
