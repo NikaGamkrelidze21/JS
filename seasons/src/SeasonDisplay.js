@@ -20,18 +20,21 @@ const getSeason = (lat, month) =>{
     }
 };
 
-const SeasonDisplay = (props) => {
+const SeasonDisplay = (props) => { 
     const season = getSeason(props.lat, Date().getMonth);
 
     const {text, iconName} = seasonCongig[season]
 
     return (
-    <div className={`season-display ${season}`}>
-        <i className={`icon-left massive ${iconName} icon`}/>
-        <h1>{text}</h1>
-        <i className={`icon-right massive ${iconName} icon`}/>
+        <div>
+            <i classname={`${iconName} icon`}></i>
+            <div className={`season-display ${season}`}>
+                <i className={`icon-left massive ${iconName} icon`} />
+                <h1>{text}</h1>
+                <i className={`icon-right massive ${iconName} icon`} />
+            </div>
+        </div>
 
-    </div>
     )
 };
 

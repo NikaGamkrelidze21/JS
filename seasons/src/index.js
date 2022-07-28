@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SeasonDisplay from './SeasonDisplay';
 import Loader from './loader';
 
 class App extends React.Component {
@@ -16,17 +15,7 @@ class App extends React.Component {
   }
 
   render() {
-    if (this.state.errorMessage && !this.state.lat) {
-      return <div>Eror: {this.state.errorMessage}</div>;
-    }
-
-    if (!this.state.errorMessage && this.state.lat) {
-      return <SeasonDisplay lat={this.state.lat}  />
-    }
-
     return <Loader  textMessage = "Waiting For Location Approving"/>
   }
 }
-
-
 ReactDOM.render(<App />, document.querySelector('#root'))
